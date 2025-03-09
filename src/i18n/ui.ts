@@ -8,7 +8,7 @@ export const defaultLang = "es";
 
 export const ui = {
     en:{
-        "head.title": "Welcome to the app",
+        "head.title": "Hi! I'm Andres",
         "head.subtitle": "This is a subtitle",
         "head.resume": "View resume",
         "skills.title": "Skills",
@@ -60,12 +60,12 @@ export const ui = {
                 github:"github.com"
             },
             {
-                title:"",
+                title:"Spotify Clone",
                 description:"",
-                tags:["React","Tailwind","Node.js","Express","MongoDB"], 
-                image:"",
-                link:"",
-                github:""
+                tags:["React","Tailwind","Astro","Node.js","Typescript"], 
+                image:"/screen_spotify.png",
+                link:"https://spotify-clone-iota-snowy.vercel.app/",
+                github:"https://github.com/andresrpdev/spotify_clone"
             }
             ]
     },
@@ -123,12 +123,20 @@ export const ui = {
                 github:"github.com"
             },
             {
-                title:"",
-                description:"",
-                tags:["React","Tailwind","Node.js","Express","MongoDB"], 
-                image:"",
-                link:"",
-                github:""
+              title:"Spotify Clone",
+              description:"Proyecto personal en el que clone la pagina de inicio de Spotify, con la finalidad de practicar mis habilidades en React y Tailwind",
+              tags:["React","Tailwind","Astro","Node.js","Typescript"], 
+              image:"/screen_spotify.png",
+              link:"https://spotify-clone-iota-snowy.vercel.app/",
+              github:"https://github.com/andresrpdev/spotify_clone"
+            },
+            {
+              title:"Concesionaria de autos",
+              description:"Proyecto personal en el que cree una concesionaria de autos, con la finalidad de practicar mis habilidades en React, Tailwind y Supabase",
+              tags:["React","Tailwind","Supabase"],
+              image:"/logo.png",
+              link:"https://car-dealership.vercel.app/",
+              github:""
             }
             ]
     }
