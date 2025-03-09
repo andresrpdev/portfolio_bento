@@ -1,18 +1,26 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const currentValue = Astro.currentLocale || "es";
+---
+
+
 <form class="flex flex-col gap-3">
   <input 
     type="text" 
-    placeholder="Tu nombre"
+    placeholder={t("contact.name") as string}
     class="bg-neutral-800 border border-neutral-700 rounded-lg px-3 py-2 text-sm text-gray-300 placeholder-gray-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
   />
   
   <input 
     type="email" 
-    placeholder="Tu email"
+    placeholder={t("contact.email") as string}
     class="bg-neutral-800 border border-neutral-700 rounded-lg px-3 py-2 text-sm text-gray-300 placeholder-gray-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
   />
   
   <textarea 
-    placeholder="Mensaje"
+  placeholder={t("contact.message") as string}
     rows="6"
     class="bg-neutral-800 border border-neutral-700 rounded-lg px-3 py-2 text-sm text-gray-300 placeholder-gray-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 resize-none"
   ></textarea>
@@ -21,6 +29,6 @@
     type="submit"
     class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg px-4 py-2 text-sm transition-colors"
   >
-    Enviar mensaje
+  {t("contact.send")}
   </button>
 </form> 

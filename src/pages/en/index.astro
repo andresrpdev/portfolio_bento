@@ -1,0 +1,20 @@
+---
+// index.astro - Página principal
+import Layout from '../../layouts/Layout.astro';
+import BentoGrid from '../../components/BentoGrid.astro';
+import EmblaCarousel from '../../components/EmblaCarousel.jsx';
+---
+
+<Layout title="Andres Romanutti | Portfolio">
+  <main class="min-h-screen bg-black text-white">
+    <div class="container mx-auto py-8">
+      <BentoGrid />
+    </div>
+  </main>
+</Layout>
+
+<style>
+  :root {
+    color-scheme: dark;
+  }
+</style>
